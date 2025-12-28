@@ -1,0 +1,49 @@
+
+> ✅ This satisfies **Project description** + **How to compile and run**
+
+---
+
+# 📄 `docs/Design_Notes.md` (VERY IMPORTANT FOR MARKS)
+
+```md
+# Design Notes – LearnTrack
+
+## Why ArrayList Instead of Array
+ArrayList is used instead of arrays because it provides dynamic resizing.
+In this application, the number of students, courses, and enrollments is not fixed
+and can grow at runtime.
+
+ArrayList also provides built-in methods such as add(), remove(), and iteration support,
+making the code cleaner and easier to maintain compared to plain arrays.
+
+---
+
+## Where Static Members Were Used and Why
+Static members are used in the IdGenerator utility class.
+The ID counters and ID generation methods are static to ensure that:
+- IDs are unique across the entire application
+- There is a single shared counter for students, courses, and enrollments
+- No object creation is required for ID generation
+
+This is a correct use of static members because ID generation does not depend on object state.
+
+---
+
+## Where Inheritance Was Used and What Was Gained
+Inheritance is implemented using a base class called Person.
+The Student class extends the Person class and reuses common fields such as id, firstName,
+lastName, and email.
+
+This approach reduces code duplication and improves reusability.
+It also demonstrates polymorphism by allowing method overriding
+(e.g., customizing the getDisplayName() method in the Student class).
+
+---
+
+## Clean Code Practices Followed
+- Methods are kept short and focused on a single responsibility
+- Method names are meaningful and descriptive (e.g., addStudent, findStudentById)
+- Business logic is separated from UI code
+- Entity classes contain only data and getters/setters
+- Service classes handle application logic
+- The Main class handles only menu display and user input
