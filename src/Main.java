@@ -13,7 +13,7 @@ public class Main {
 
         while (true){
             System.out.println("1 -> Add Student");
-            System.out.println("2 -> View all");
+            System.out.println("2 -> View all Students");
             System.out.println("0 -> Exist");
 
             int choice = Integer.parseInt(sc.nextLine());
