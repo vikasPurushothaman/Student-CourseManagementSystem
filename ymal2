@@ -1,0 +1,30 @@
+                ┌───────────────┐
+                │    Person     │
+                ├───────────────┤
+                │ id            │
+                │ firstName     │
+                │ lastName      │
+                │ email         │
+                ├───────────────┤
+                │ getDisplayName() │
+                └───────▲───────┘
+                        │
+                 extends│
+                        │
+                ┌───────────────┐
+                │    Student    │
+                ├───────────────┤
+                │ batch         │
+                │ active        │
+                └───────────────┘
+
+
+┌───────────────┐        ┌───────────────┐
+│    Course     │        │  Enrollment   │
+├───────────────┤        ├───────────────┤
+│ id            │        │ id            │
+│ courseName    │        │ studentId     │
+│ description   │        │ courseId      │
+│ durationWeeks │        │ enrollmentDate│
+│ active        │        │ status         │
+└───────────────┘        └───────────────┘
